@@ -11,7 +11,7 @@ if (!defined('ROOT_PATH')) {
 /**
  * Site Name
  */
-define('SITE_NAME', 'EasyPass - easily manage your password');
+define('SITE_NAME', 'EasyPass - Easily manage your password');
 
 /**
  * Rewrite setting:
