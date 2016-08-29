@@ -26,6 +26,15 @@ return array (
       ),
       'regexp' => '/^api\\/encrypt\\/(\\w+)$/i',
     ),
+    1 => 
+    array (
+      'callback' => 
+      array (
+        0 => 'Controller\\api',
+        1 => 'encrypt',
+      ),
+      'regexp' => '/^api\\/encrypt$/i',
+    ),
   ),
   'Fallback' => 
   array (

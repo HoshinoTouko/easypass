@@ -69,10 +69,22 @@ if(!defined('ROOT_PATH')) exit('This file could not be access directly.');
 <div class="row">
 <div class="form palette palette-clouds col-sm-12">
 
-<div class="form-group">
+<div class="form-group" id="origin-pass-div">
 <p>Origin password</p>
 <input type="password" class="form-control" value="" placeholder="Password" id="origin-pass">
 </div>
+
+<a class="btn btn-primary btn-lg btn-block" id="generate">Generate</a>
+<div class="form-group">
+<p>Result</p>
+<input type="text" class="form-control" placeholder="Your password here" id="result">
+</div>
+
+<h5 style="color: #2c3e50">Other settings</h5>
+<div class="progress">
+<div class="progress-bar" style="width: 30%;"></div>
+</div>
+
 <div class="form-group">
 <p>Additional string 1 (Recommended)</p>
 <input type="text" class="form-control" value="" placeholder="Maybe the domain of the website" id="add-1">
@@ -86,9 +98,9 @@ if(!defined('ROOT_PATH')) exit('This file could not be access directly.');
 <input type="text" class="form-control" value="" placeholder="Other info as you like" id="add-3">
 </div>
 
-<div class="form-group">
+<div class="form-group" id="length-div">
 <p>Length</p>
-<input type="text" class="form-control" value="" placeholder="The length of your password" id="length">
+<input type="text" class="form-control" value="12" placeholder="The length of your password" id="length">
 </div>
 
 <div class="form-group">
@@ -111,12 +123,7 @@ punctuation
 </label>
 </div>
 
-<div class="form-group">
-<p>Result</p>
-<input type="text" class="form-control" placeholder="Your password here" id="result">
-</div>
 
-<a class="btn btn-primary btn-lg btn-block" id="generate">Generate</a>
 </div>
 </div>
 
