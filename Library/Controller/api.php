@@ -9,6 +9,9 @@
 namespace Controller;
 
 use Core\Template;
+use Model\getEArray;
+
+@include LIBRARY_PATH . 'Model/init.php';
 
 class api{
     /**
@@ -25,6 +28,7 @@ class api{
      */
     function encrypt()
     {
+        $getEArray = new getEArray();
         // Values initialize
         $originPass = $_GET["originPass"];
         $add1 = $_GET["add1"];
@@ -34,5 +38,8 @@ class api{
 
         // Handle values
         $newPass = $originPass . $add1 . $add2 . $add3;
+        $eArray = $getEArray->getEArrayWithLetterAndNumber();
+        echo json_encode($eArray);
+
     }
 }

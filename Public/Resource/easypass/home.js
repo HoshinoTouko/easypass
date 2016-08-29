@@ -39,7 +39,7 @@ $(function() {
             // Get JSON
             if (check){
                 $.getJSON(
-                    'api/test.php',
+                    'api/encrypt',
                     {
                         originPass: originPass,
                         add1: add1,
@@ -49,7 +49,7 @@ $(function() {
                     },
                     function(json)
                     {
-
+                        $("#result").text(json.result);
                     }
                 );
             }
