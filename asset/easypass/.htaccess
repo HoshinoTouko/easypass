@@ -1,0 +1,8 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteCond %{HTTP_HOST} ^www.pw.nya.pm
+RewriteRule (.*) http://pw.nya.pm/$1 [R=301,L]
+RewriteCond %{HTTPS} !^on$
+RewriteRule (.*) https://%{SERVER_NAME}%{REQUEST_URI} [R=301]
+</IfModule>
