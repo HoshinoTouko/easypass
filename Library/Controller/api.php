@@ -28,7 +28,9 @@ class api{
      */
     function encrypt()
     {
+        // Generate Encrypt Array
         $getEArray = new getEArray();
+        $eArray = $getEArray->getEArrayWithLetterAndNumber();
         // Values initialize
         $originPass = $_GET["originPass"];
         $add1 = $_GET["add1"];
@@ -38,7 +40,7 @@ class api{
 
         // Handle values
         $newPass = $originPass . $add1 . $add2 . $add3;
-        $eArray = $getEArray->getEArrayWithLetterAndNumber();
+
         echo json_encode($eArray);
 
     }

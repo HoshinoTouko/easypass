@@ -25,7 +25,7 @@ $(function() {
                 $("#origin-pass-div").removeClass("has-error");
             }
             // Check length form
-            if (length == ""){
+            if (length == "" || length >= 32 || length <= 0){
                 check = false;
                 $("#length-div").removeClass("has-success");
                 $("#length-div").addClass("has-error");
