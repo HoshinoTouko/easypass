@@ -26,8 +26,9 @@ class getEArray{
 
         $i = 0;
         $j = 0;
+        $arrayLength = sizeof($eArray);
         while( isset($eArray[$i]) ){
-            $j = ($j+ord($encryptPassN[$i])) % 62;
+            $j = ($j+ord($encryptPassN[$i])) % $arrayLength;
             $temp = $eArray[$i];
             $eArray[$i] = $eArray[$j];
             $eArray[$j] = $temp;

@@ -39,7 +39,7 @@ $(function() {
             // Get JSON
             if (check){
                 $.getJSON(
-                    'api/encrypt',
+                    'encrypt',
                     {
                         originPass: originPass,
                         add1: add1,
@@ -49,6 +49,7 @@ $(function() {
                     },
                     function(json)
                     {
+                        alert(json);
                         $("#result").text(json.result);
                     }
                 );
@@ -57,3 +58,6 @@ $(function() {
         }
     )
 });
+
+
+

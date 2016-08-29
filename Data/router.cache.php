@@ -33,7 +33,7 @@ return array (
         0 => 'Controller\\api',
         1 => 'encrypt',
       ),
-      'regexp' => '/^api\\/encrypt$/i',
+      'regexp' => '/^encrypt$/i',
     ),
   ),
   'Fallback' => 
