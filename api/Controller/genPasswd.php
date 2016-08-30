@@ -10,7 +10,7 @@ namespace Model;
 
 class genPasswd{
 
-    function genPasswd($eArray, $oArray, $newPass, $length){
+    function genPasswd($eArray, $newPass, $length){
         // init output data
         $result = "";
         // Get the array's length
@@ -19,7 +19,7 @@ class genPasswd{
         $pointer = 0;
         for($i=0; $i<$length; $i++){
             // Set an random offs
-            $t = $this->findWhere($newPass[$i], $oArray)%17;
+            $t = $this->findWhere($newPass[$i])%17;
             $pointer += $t;
             // Get chars
             $char = $eArray[$pointer%$arrayLength];
@@ -28,10 +28,16 @@ class genPasswd{
         return $result;
     }
 
-    function findWhere($str, $array){
-        for($i=0; $i<sizeof($array); $i++){
-            if ($array[$i] == $str)
-                return $i+1;
+    function findWhere($char){
+        $t = ord($char);
+        if ($t >= 48 and $t <= 57){
+            return $t-47;
+        }
+        elseif ($t >= 97 and $t <= 122){
+            return $t-86;
+        }
+        else{
+            return $t%32;
         }
     }
 }

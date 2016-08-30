@@ -37,7 +37,7 @@ $newPass = hash('sha512', base64_encode($originPass . $add1 . $add2 . $add3));
 
 // Generate password
 try{
-    $result = $genPasswd->genPasswd($eArray, $oArray, $newPass, $length);
+    $result = $genPasswd->genPasswd($eArray, $newPass, $length);
     $status = true;
     $info = "Success";
 }
