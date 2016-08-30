@@ -37,17 +37,19 @@ $(function() {
                 check = true;
                 $("#origin-pass-div").addClass("has-success");
                 $("#origin-pass-div").removeClass("has-error");
-            }
-            // Check length form
-            if (length == "" || length >= 32 || length <= 0){
-                check = false;
-                $("#length-div").removeClass("has-success");
-                $("#length-div").addClass("has-error");
-            }
-            else{
-                check = true;
-                $("#length-div").addClass("has-success");
-                $("#length-div").removeClass("has-error");
+
+                // Check length form
+                if (length == "" || length > 32 || length <= 0){
+                    check = false;
+                    $("#length-div").removeClass("has-success");
+                    $("#length-div").addClass("has-error");
+                }
+                else{
+                    check = true;
+                    $("#length-div").addClass("has-success");
+                    $("#length-div").removeClass("has-error");
+                }
+
             }
 
             // Get JSON
