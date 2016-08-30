@@ -11,6 +11,7 @@ class getEArray{
 
     function getEArray(){
 
+
         $eArray = [];
         $num = 62;
         for($i=0; $i<=127; $i++){
