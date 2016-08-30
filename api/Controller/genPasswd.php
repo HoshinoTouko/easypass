@@ -31,7 +31,7 @@ class genPasswd{
     function findWhere($str, $array){
         for($i=0; $i<sizeof($array); $i++){
             if ($array[$i] == $str)
-                return $i;
+                return $i+1;
         }
     }
 }
