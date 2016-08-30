@@ -9,7 +9,7 @@ namespace Model;
 
 class getEArray{
 
-    function getEArrayWithLetterAndNumber(){
+    function getEArray(){
 
         $eArray = [];
         $num = 62;

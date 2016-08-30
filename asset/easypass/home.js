@@ -13,6 +13,20 @@ $(function() {
             var add3 = $("#add-3").val();
             var length = $("#length").val();
 
+            // Check hasPunctuation and hasNumber
+            if ($("#punctuation-label").hasClass("checked")){
+                var hasPunctuation = true;
+            }
+            else{
+                var hasPunctuation = false;
+            }
+            if ($("#number-label").hasClass("checked")){
+                var hasNumber = true;
+            }
+            else{
+                var hasNumber = false;
+            }
+
             // Check originPass form
             if (originPass == ""){
                 check = false;
@@ -39,16 +53,16 @@ $(function() {
             // Get JSON
             if (check){
                 $.getJSON(
-                    'api/encrypt.php',
-                    {
+                    'api/encrypt.php', {
                         originPass: originPass,
                         add1: add1,
                         add2: add2,
                         add3: add3,
-                        length: length
+                        length: length,
+                        hasNumber: hasNumber,
+                        hasPunctuation: hasPunctuation
                     },
-                    function(json)
-                    {
+                    function(json) {
                         $("#result").attr('value',json.result);
                     }
                 );
