@@ -10,30 +10,32 @@ namespace Model;
 class getArray{
 
     function getEArray($hasNumber, $hasPunctuation){
-
+        // Array initialize
         $eArray = [];
+        // Set the Punctuation's ASCII
         $punc = [33, 34, 37, 38, 45, 63, 64, 95, 126];
+        // Traversal all ASCII(10)
         for($i=0; $i<=127; $i++){
-
-            // Number
+            // If hasNumber, push number to the array
             if($hasNumber == "true"){
                 if($i>=48 and $i <= 57)
                     array_push($eArray, chr($i));
             }
 
-            // Punctuation
+            // If hasPunctuation, push punctuation to the array
             if($hasPunctuation == "true"){
                 if(in_array($i, $punc))
                     array_push($eArray, chr($i));
             }
 
-            // Letter
+            // Push letters to the array
             if($i>=65 and $i <= 90)
                 array_push($eArray, chr($i));
             if($i>=97 and $i <= 122)
                 array_push($eArray, chr($i));
         }
-        $encryptPass = 'TestPass';
+        // Get the password for encrypting
+        $encryptPass = __PASS__;
         $encryptPassN = hash('sha512', base64_encode($encryptPass));
 
         $i = 0;
@@ -52,6 +54,8 @@ class getArray{
     }
 
 
+
+    // The following function has no use temporarily
     function getOArray($hasNumber, $hasPunctuation){
 
         $oArray = [];

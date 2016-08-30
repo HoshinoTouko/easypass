@@ -5,16 +5,16 @@
  * Date: 16-8-29
  * Time: 下午11:47
  */
-
-
+namespace Controller;
 
 use Model\getArray;
 use Model\genPasswd;
 
 include 'Controller/genPasswd.php';
 include 'Controller/init.php';
+include 'Config.php';
 
-//init
+// init
 $getArray = new getArray();
 $genPasswd = new genPasswd();
 // Values initialize

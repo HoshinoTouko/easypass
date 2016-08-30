@@ -15,14 +15,16 @@ class genPasswd{
         $result = "";
         // Get the array's length
         $arrayLength = sizeof($eArray);
-
+        // Set a pointer
         $pointer = 0;
+        // Generate password words by words
         for($i=0; $i<$length; $i++){
-            // Set an random offs
+            // Set random offsets
             $t = $this->findWhere($newPass[$i])%17;
             $pointer += $t;
             // Get chars
             $char = $eArray[$pointer%$arrayLength];
+            // Combine them
             $result .= $char;
         }
         return $result;
