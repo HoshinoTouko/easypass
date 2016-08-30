@@ -7,16 +7,27 @@
  */
 namespace Model;
 
-class getEArray{
+class getArray{
 
-    function getEArray(){
-
+    function getEArray($hasNumber, $hasPunctuation){
 
         $eArray = [];
-        $num = 62;
+        $punc = [33, 34, 37, 38, 45, 63, 64, 95, 126];
         for($i=0; $i<=127; $i++){
-            if($i>=48 and $i <= 57)
-                array_push($eArray, chr($i));
+
+            // Number
+            if($hasNumber == "true"){
+                if($i>=48 and $i <= 57)
+                    array_push($eArray, chr($i));
+            }
+
+            // Punctuation
+            if($hasPunctuation == "true"){
+                if(in_array($i, $punc))
+                    array_push($eArray, chr($i));
+            }
+
+            // Letter
             if($i>=65 and $i <= 90)
                 array_push($eArray, chr($i));
             if($i>=97 and $i <= 122)
@@ -38,5 +49,34 @@ class getEArray{
         }
 
         return $eArray;
+    }
+
+
+    function getOArray($hasNumber, $hasPunctuation){
+
+        $oArray = [];
+        $punc = [33, 34, 37, 38, 45, 63, 64, 95, 126];
+        for($i=0; $i<=127; $i++){
+
+            // Number
+            if($hasNumber == "true"){
+                if($i>=48 and $i <= 57)
+                    array_push($oArray, chr($i));
+            }
+
+            // Punctuation
+            if($hasPunctuation == "true"){
+                if(in_array($i, $punc))
+                    array_push($oArray, chr($i));
+            }
+
+            // Letter
+            if($i>=65 and $i <= 90)
+                array_push($oArray, chr($i));
+            if($i>=97 and $i <= 122)
+                array_push($oArray, chr($i));
+        }
+
+        return $oArray;
     }
 }

@@ -8,14 +8,14 @@
 
 
 
-use Model\getEArray;
+use Model\getArray;
 use Model\genPasswd;
 
 include 'Controller/genPasswd.php';
 include 'Controller/init.php';
 
 //init
-$getEArray = new getEArray();
+$getArray = new getArray();
 $genPasswd = new genPasswd();
 // Values initialize
 $originPass = $_GET["originPass"];
@@ -27,14 +27,17 @@ $hasNumber = $_GET["hasNumber"];
 $hasPunctuation = $_GET["hasPunctuation"];
 
 // Generate encrypt array
-$eArray = $getEArray->getEArray();
+$eArray = $getArray->getEArray($hasNumber, $hasPunctuation);
+
+// Generate original array
+$oArray = $getArray->getOArray($hasNumber, $hasPunctuation);
 
 // Handle values
 $newPass = hash('sha512', base64_encode($originPass . $add1 . $add2 . $add3));
 
 // Generate password
 try{
-    $result = $genPasswd->genPasswd($eArray, $newPass, $length);
+    $result = $genPasswd->genPasswd($eArray, $oArray, $newPass, $length);
     $status = true;
     $info = "Success";
 }
@@ -48,7 +51,7 @@ echo json_encode(
     array(
         'status'=> $status,
         'info'=> $info,
-        'result'=> $result
-        //'passwdMap'=> $eArray
+        'result'=> $result,
+        'passwdMap'=> $eArray
     )
 );
