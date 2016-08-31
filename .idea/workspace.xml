@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e3f58e3a-c491-4911-b020-d1639b9bea04" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/Controller/genPasswd.php" afterPath="$PROJECT_DIR$/api/Controller/genPasswd.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/Controller/init.php" afterPath="$PROJECT_DIR$/api/Controller/init.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <ignored path="web.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,11 +23,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5075">
-              <caret line="175" column="69" selection-start-line="175" selection-start-column="69" selection-end-line="175" selection-end-column="69" />
+            <state relative-caret-position="201">
+              <caret line="155" column="27" selection-start-line="155" selection-start-column="27" selection-end-line="155" selection-end-column="27" />
               <folding>
                 <element signature="n#style#0;n#h5#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -71,7 +69,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="init.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="init.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api/Controller/init.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="174">
@@ -120,11 +118,11 @@
         <option value="$PROJECT_DIR$/asset/easypass/.htaccess" />
         <option value="$PROJECT_DIR$/.htaccess" />
         <option value="$PROJECT_DIR$/asset/easypass/home.js" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/api/Config.php" />
         <option value="$PROJECT_DIR$/api/encrypt.php" />
         <option value="$PROJECT_DIR$/api/Controller/genPasswd.php" />
         <option value="$PROJECT_DIR$/api/Controller/init.php" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -314,12 +312,12 @@
       <workItem from="1472566352367" duration="368000" />
       <workItem from="1472573356012" duration="2447000" />
       <workItem from="1472649115463" duration="832000" />
-      <workItem from="1472657460575" duration="493000" />
+      <workItem from="1472657460575" duration="763000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45254000" />
+    <option name="totallyTimeSpent" value="45524000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
@@ -550,17 +548,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/asset/Flat-UI/img/favicon.ico" />
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5075">
-          <caret line="175" column="69" selection-start-line="175" selection-start-column="69" selection-end-line="175" selection-end-column="69" />
-          <folding>
-            <element signature="n#style#0;n#h5#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/Config.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="203">
@@ -601,6 +588,17 @@
         <state relative-caret-position="174">
           <caret line="11" column="50" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="50" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="155" column="27" selection-start-line="155" selection-start-column="27" selection-end-line="155" selection-end-column="27" />
+          <folding>
+            <element signature="n#style#0;n#h5#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
