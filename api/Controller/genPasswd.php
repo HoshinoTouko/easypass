@@ -20,10 +20,10 @@ class genPasswd{
         // Generate password words by words
         for($i=0; $i<$length; $i++){
             // Set random offsets
-            $t = $this->findWhere($newPass[$i])%17;
+            $t = $this->findWhere($newPass[$i]);
             $pointer += $t;
             // Get chars
-            $char = $eArray[$pointer%$arrayLength];
+            $char = $eArray[$pointer % $arrayLength];
             // Combine them
             $result .= $char;
         }
