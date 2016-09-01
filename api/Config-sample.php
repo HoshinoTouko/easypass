@@ -5,4 +5,4 @@
  * Date: 2016/8/31
  * Time: 0:41
  */
-define('__PASS__', "TestPass");
+define('__PASS__', "Your website password here.");
