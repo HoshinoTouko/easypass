@@ -1,5 +1,8 @@
 <IfModule mod_rewrite.c>
-RewriteEngine On
-RewriteBase /
-RewriteRule (.*) RewriteCond %{HTTP:KERSSL} !on
+RewriteEngine on
+
+RewriteCond %{HTTP:KERSSL} !on
+RewriteCond %{HTTP_HOST} ^pw.nya.pm [NC]
+RewriteRule ^(.*)$ https://pw.nya.pm/$1 [R=302,L]
+
 </IfModule>

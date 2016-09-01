@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e3f58e3a-c491-4911-b020-d1639b9bea04" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/Controller/init.php" afterPath="$PROJECT_DIR$/api/Controller/init.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/encrypt.php" afterPath="$PROJECT_DIR$/api/encrypt.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htaccess.htaccess" afterPath="$PROJECT_DIR$/htaccess.htaccess" />
     </list>
     <ignored path="web.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -48,7 +46,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="encrypt.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="encrypt.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api/encrypt.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="570">
@@ -57,6 +55,16 @@
                 <element signature="e#6#86#0#PHP" expanded="true" />
                 <element signature="e#110#129#0#PHP" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="htaccess.htaccess" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/htaccess.htaccess">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="145">
+              <caret line="5" column="46" selection-start-line="5" selection-start-column="46" selection-end-line="5" selection-end-column="46" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -125,6 +133,7 @@
         <option value="$PROJECT_DIR$/api/Config.php" />
         <option value="$PROJECT_DIR$/api/Controller/init.php" />
         <option value="$PROJECT_DIR$/api/encrypt.php" />
+        <option value="$PROJECT_DIR$/htaccess.htaccess" />
       </list>
     </option>
   </component>
@@ -316,12 +325,12 @@
       <workItem from="1472649115463" duration="832000" />
       <workItem from="1472657460575" duration="1492000" />
       <workItem from="1472722935762" duration="180000" />
-      <workItem from="1472724544243" duration="1889000" />
+      <workItem from="1472724544243" duration="2738000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48322000" />
+    <option name="totallyTimeSpent" value="49171000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
@@ -366,14 +375,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/api/Controller/init.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1711">
-          <caret line="64" column="13" selection-start-line="64" selection-start-column="13" selection-end-line="64" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/asset/easypass/home.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="841">
@@ -603,6 +604,14 @@
             <element signature="e#6#86#0#PHP" expanded="true" />
             <element signature="e#110#129#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/htaccess.htaccess">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="5" column="46" selection-start-line="5" selection-start-column="46" selection-end-line="5" selection-end-column="46" />
+          <folding />
         </state>
       </provider>
     </entry>
