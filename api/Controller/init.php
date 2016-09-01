@@ -30,7 +30,6 @@ class getArray{
                 }
             }
 
-
             // Push letters to the array
             if($i>=65 and $i <= 90)
                 array_push($eArray, chr($i));
