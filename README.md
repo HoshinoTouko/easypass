@@ -1,5 +1,7 @@
 # easypass  
 Use one password to every website safely  
+## Demo  
+http://pw.nya.pm
 ## Setup
 bash  
 
