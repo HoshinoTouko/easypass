@@ -13,7 +13,7 @@ class getArray{
         // Array initialize
         $eArray = [];
         // Set the Punctuation's ASCII
-        $punc = [33, 35, 36, 37, 38, 45, 63, 64, 95, 126];
+        $punc = [33, 35, 36, 37, 38, 43, 45, 46, 63, 64, 95, 126];
         // Traversal all ASCII(10)
         for($i=0; $i<=127; $i++){
             // If hasNumber, push number to the array
@@ -24,9 +24,12 @@ class getArray{
 
             // If hasPunctuation, push punctuation to the array
             if($hasPunctuation == "true"){
-                if(in_array($i, $punc))
+                if(in_array($i, $punc)){
                     array_push($eArray, chr($i));
+                    array_push($eArray, chr($i));
+                }
             }
+
 
             // Push letters to the array
             if($i>=65 and $i <= 90)

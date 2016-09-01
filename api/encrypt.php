@@ -29,9 +29,6 @@ $hasPunctuation = $_GET["hasPunctuation"];
 // Generate encrypt array
 $eArray = $getArray->getEArray($hasNumber, $hasPunctuation);
 
-// Generate original array
-$oArray = $getArray->getOArray($hasNumber, $hasPunctuation);
-
 // Handle values
 $newPass = hash('sha512', base64_encode($originPass . $add1 . $add2 . $add3));
 
@@ -51,7 +48,7 @@ echo json_encode(
     array(
         'status'=> $status,
         'info'=> $info,
-        'result'=> $result,
-        'passwdMap'=> $eArray
+        'result'=> $result
+        //'passwdMap'=> $eArray
     )
 );
