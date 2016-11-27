@@ -3,8 +3,53 @@
  */
 
 $(function() {
+    $("#copy").on("click",
+        function(){
+            $("#result").attr("type", "text");
+            var clipboard = new Clipboard("#copy");
+
+            clipboard.on('success', function(e) {
+                console.log(e);
+                $("#copy").text("Success");
+            });
+
+            clipboard.on('error', function(e) {
+                console.log(e);
+                $("#copy").text("Failed");
+            });
+
+            setTimeout(function(){
+                $("#result").val("");
+                $("#result").attr("type", "password");
+            },50)
+
+        }
+
+    )
+});
+
+$(function() {
+    $("#show").on("click",
+        function(){
+            $("#result").attr("type", "text");
+
+            setTimeout(function(){
+                $("#result").val("");
+                $("#result").attr("type", "password");
+            },10000)
+
+        }
+
+    )
+});
+
+$(function() {
     $("#generate").on("click",
         function() {
+            // Hide the result
+            $("#result").attr("type", "password");
+            // Change the info.
+            $("#copy").text("Copy!");
             // Values initialize
             var check = false;
             var originPass = $("#origin-pass").val();

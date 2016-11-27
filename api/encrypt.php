@@ -12,7 +12,7 @@ use Model\genPasswd;
 
 include 'Controller/genPasswd.php';
 include 'Controller/init.php';
-include 'Config-sample.php';
+include 'Config.php';
 
 // init
 $getArray = new getArray();
