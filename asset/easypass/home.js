@@ -23,6 +23,7 @@ $(function() {
                 $("#result").attr('value', "");
                 $("#result").attr("type", "password");
                 $("#secretResult").addClass("hidden");
+                $("#secretResult").text(" ");
             },50)
 
         }
