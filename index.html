@@ -72,11 +72,22 @@
                 <p>Origin password</p>
                 <input type="password" class="form-control" value="" placeholder="Password" id="origin-pass">
             </div>
+            <div class="col-sm-4">
+                <a class="btn btn-success btn-lg btn-block" id="generate">Generate</a>
+            </div>
+            <div class="col-sm-3 col-sm-offset-1">
+                <a class="btn btn-inverse btn-lg btn-block" id="copy"  data-clipboard-target="#result">Copy!</a>
+            </div>
+            <div class="col-sm-3 col-sm-offset-1">
+                <a class="btn btn-info btn-lg btn-block" id="show">Show!(10s)</a>
+            </div>
+        </div>
 
-            <a class="btn btn-primary btn-lg btn-block" id="generate">Generate</a>
+
+        <div class="form palette palette-clouds col-sm-12">
             <div class="form-group">
                 <p>Result</p>
-                <input type="text" class="form-control" placeholder="Your password here" id="result">
+                <input type="password" class="form-control" placeholder="Your password here" id="result">
             </div>
 
             <h5 style="color: #2c3e50">Other settings</h5>
@@ -89,9 +100,9 @@
                 <input type="text" class="form-control" value="" placeholder="Maybe the domain of the website" id="add-1">
             </div>
             <div class="form-group">
-                <p>Additional string 2 (Optional)</p>
-                <input type="text" class="form-control" value="" placeholder="Maybe the username of the website" id="add-2">
-            </div>
+            <p>Additional string 2 (Optional)</p>
+            <input type="text" class="form-control" value="" placeholder="Maybe the username of the website" id="add-2">
+        </div>
             <div class="form-group">
                 <p>Additional string 3 (Optional)</p>
                 <input type="text" class="form-control" value="" placeholder="Other info as you like" id="add-3">
@@ -147,7 +158,9 @@
                             Special Thanks
                         </h6>
                         <p>
-                            Flat-UI @ Bootstrap
+                            <a href="http://designmodo.github.io/Flat-UI/">
+                                Flat-UI @ Bootstrap
+                            </a>
                         </p>
                         <p>
                             PHPStorm (EDU) @ Jetbrains
@@ -187,6 +200,7 @@
 <script src="asset/Flat-UI/js/custom_checkbox_and_radio.js"></script>
 
 <script src="asset/easypass/home.js"></script>
+<script src="asset/easypass/clipboard.min.js"></script>
 
 </body>
 </html>
