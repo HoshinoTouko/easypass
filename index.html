@@ -76,10 +76,10 @@
                 <a class="btn btn-success btn-lg btn-block" id="generate">Generate</a>
             </div>
             <div class="col-sm-3 col-sm-offset-1">
-                <a class="btn btn-inverse btn-lg btn-block" id="copy"  data-clipboard-target="#result">Copy!</a>
+                <a class="btn btn-inverse btn-lg btn-block" id="copy"  data-clipboard-target="#secretResult">Copy!</a>
             </div>
             <div class="col-sm-3 col-sm-offset-1">
-                <a class="btn btn-info btn-lg btn-block" id="show">Show!(10s)</a>
+                <a class="btn btn-info btn-lg btn-block" id="show">Show!</a>
             </div>
         </div>
 
@@ -106,7 +106,7 @@
                     Number
                 </label>
                 <label class="checkbox" for="punctuation" id="punctuation-label">
-                    <input type="checkbox" value="checked" id="punctuation" data-toggle="checkbox" class="custom-checkbox">
+                    <input type="checkbox" checked="checked" value="punctuation" id="punctuation" data-toggle="checkbox" class="custom-checkbox">
                     <span class="icons">
                         <span class="icon-unchecked"></span>
                         <span class="icon-checked"></span>
@@ -137,6 +137,7 @@
 
 
         </div>
+        <p class="hidden" id="secretResult"></p>
     </div>
 
 </div>

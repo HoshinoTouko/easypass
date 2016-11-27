@@ -6,6 +6,7 @@ $(function() {
     $("#copy").on("click",
         function(){
             $("#result").attr("type", "text");
+            $("#secretResult").removeClass("hidden");
             var clipboard = new Clipboard("#copy");
 
             clipboard.on('success', function(e) {
@@ -19,8 +20,9 @@ $(function() {
             });
 
             setTimeout(function(){
-                $("#result").val("");
+                $("#result").attr('value', "");
                 $("#result").attr("type", "password");
+                $("#secretResult").addClass("hidden");
             },50)
 
         }
@@ -31,12 +33,17 @@ $(function() {
 $(function() {
     $("#show").on("click",
         function(){
-            $("#result").attr("type", "text");
-
-            setTimeout(function(){
-                $("#result").val("");
+            if ($("#show").text() == "Show!"){
+                $("#result").attr("type", "text");
+                $("#show").text("Hide!");
+            }
+            else{
                 $("#result").attr("type", "password");
-            },10000)
+                $("#show").text("Show!");
+            }
+
+
+
 
         }
 
@@ -47,7 +54,14 @@ $(function() {
     $("#generate").on("click",
         function() {
             // Hide the result
-            $("#result").attr("type", "password");
+            if ($("#show").text() != "Show!"){
+                $("#result").attr("type", "text");
+                $("#show").text("Hide!");
+            }
+            else{
+                $("#result").attr("type", "password");
+                $("#show").text("Show!");
+            }
             // Change the info.
             $("#copy").text("Copy!");
             // Values initialize
@@ -110,7 +124,8 @@ $(function() {
                         hasPunctuation: hasPunctuation
                     },
                     function(json) {
-                        $("#result").attr('value',json.result);
+                        $("#result").attr('value', json.result);
+                        $("#secretResult").text(json.result);
                     }
                 );
             }
